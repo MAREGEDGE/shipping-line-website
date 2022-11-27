@@ -7,43 +7,50 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nav {
-  height: 80px;
-  width: 100%;
-  padding-top: 20px;
-  background-color: black;
-  color: aliceblue;
-}
+/*.nav {*/
+/*  height: 80px;*/
+/*  width: 100%;*/
+/*  padding-top: 20px;*/
+/*  background-color: black;*/
+/*  color: aliceblue;*/
+/*}*/
 .logo {
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
 }
-.nav ul {
-  float: right;
-  justify-content: space-between;
+.navbar-expand-lg .navbar-collapse{
+  flex-direction: row-reverse !important;
 }
-.nav ul li {
-  display: inline-block;
+.navbar-light .navbar-nav .nav-link{
+  color: #060843 !important;
 }
 
-.nav ul li a.active {
-  transition: 5s;
-  color: white;
-}
-.nav ul li a:hover {
-  color: white;
-  font-weight: bold;
-}
-.nav ul li a:hover {
-  text-decoration-line: underline;
-  text-decoration-color: #ed661f;
-}
-.nav-items {
-  padding: 15px;
-  font-size: 20px;
-  color: white;
-}
+/*.nav ul {*/
+/*  float: right;*/
+/*  justify-content: space-between;*/
+/*}*/
+/*.nav ul li {*/
+/*  display: inline-block;*/
+/*}*/
+
+/*.nav ul li a.active {*/
+/*  transition: 5s;*/
+/*  color: white;*/
+/*}*/
+/*.nav ul li a:hover {*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*}*/
+/*.nav ul li a:hover {*/
+/*  text-decoration-line: underline;*/
+/*  text-decoration-color: #ed661f;*/
+/*}*/
+/*.nav-items {*/
+/*  padding: 15px;*/
+/*  font-size: 20px;*/
+/*  color: white;*/
+/*}*/
 .get-started {
   padding: 12px;
   background-color: #ed661f;
@@ -53,10 +60,13 @@
 
 /* NAVBAR END */
 .background {
+  width: 100%;
   background-image: url("https://oceanservice.noaa.gov/news/feb17/containership.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.5;
+  height: 60vh;
 }
 .subheading1 {
   width: 100%;
@@ -98,6 +108,13 @@
   display: flex;
   flex-direction: row;
 }
+.stats{
+  background: deepskyblue;
+  padding-top: 10px;
+}
+.stats-bar{
+  margin-top: 10px;
+}
 .customers {
   height: 100px;
   width: 54%;
@@ -123,13 +140,11 @@
   display: flex;
   flex-direction: row;
 }
-.subheading2 {
+.subheading-text{
+  color: #060843;
+}
+.images{
   width: 100%;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin-left: 1%;
 }
 .section1 {
   width: 43%;
@@ -301,11 +316,11 @@
 
 
 }
- .Read-more:hover{
+.Read-more:hover{
   opacity: 0.7;
   text-decoration: underline;
   text-decoration-color: #ed661f;
- }
+}
 
 /* DEAR ESTEEMED CUSTOMER SECTION END*/
 /* KEEP IN TOUCH SECTION START*/
@@ -314,22 +329,21 @@
   background-color: black;
   margin-top: 4rem;
   color: white;
-  text-align: center;
-  height: 200px;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
-  
-  .email {
-    border: 1px solid white;
-    box-sizing: border-box;
-    margin-top: 2px;
-    background-color: white;
-    font-size: 12px;
-    padding: 12px;
 
-  }
-  /* KEEP IN TOUCH END SECTION*/
+.email {
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 2px;
+  background-color: white;
+  font-size: 12px;
+  padding: 12px;
+
+}
+/* KEEP IN TOUCH END SECTION*/
 
 
 /* FOOTER SECTION START*/
@@ -384,4 +398,5 @@
 }
 /* FOOTER SECTION END*/
 
-	
+
+
