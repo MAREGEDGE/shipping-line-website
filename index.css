@@ -77,7 +77,7 @@
   letter-spacing: 2px;
   font-weight: bolder;
 }
-#subheader-text {
+#subheader-text,#x-header-text {
   font-size: 25px;
 }
 
@@ -153,7 +153,7 @@
 #header-text {
   color: black;
   font-size: 35px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   font-weight: bolder;
 }
 #subheader-text {
@@ -212,7 +212,6 @@
 
 .Most-popular {
   width: 100%;
-  margin-left: 0%;
   margin-top: 2rem;
   height: 400px;
   flex-direction: row;
@@ -344,7 +343,6 @@
   color: white;
 }
 .footerBox {
-  margin-left: 10%;
   width: 20%;
   margin-left: 5%;
 }
